@@ -1,0 +1,28 @@
+{
+  "name": "dexchain-exchange",
+  "version": "1.0.0",
+  "description": "dexchain exchange",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18.0.0 <=20.5.0",
+    "npm": ">=7.0.0"
+  },
+  "scripts": {
+    "clean": "npx hardhat clean",
+    "compile": "npx hardhat compile",
+    "deploy": "npm run clean && npm run compile && npx hardhat run ./scripts/deployAndVerify.ts --network",
+    "test": "npm run clean && npm run compile && npx hardhat test",
+    "coverage": "npx hardhat coverage"
+  },
+  "author": "Brian Montero",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.13",
+    "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "dotenv": "^16.4.5"
+  }
+}

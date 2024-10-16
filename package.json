@@ -10,7 +10,7 @@
   "scripts": {
     "clean": "npx hardhat clean",
     "compile": "npx hardhat compile",
-    "deploy": "npm run clean && npm run compile && npx hardhat run ./scripts/deployAndVerify.ts --network",
+    "deploy": "npm run clean && npm run compile && npx hardhat run ./scripts/deploy.ts --network",
     "test": "npm run clean && npm run compile && npx hardhat test",
     "coverage": "npx hardhat coverage"
   },
